@@ -1,0 +1,125 @@
+/* all app scss styles here */
+
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialising;
+}
+
+#main-section {
+  @include grid-column(
+    $columns: 11.5,
+    $center: true
+  );
+  background: greenyellow;
+  height: 100%;
+}
+
+nav {
+  background: #272328;
+  height: 100%;
+  position: relative;
+
+  &.open {
+    @include grid-column(2);
+
+    #menu-action {
+      @include grid-column(
+        $columns: 2,
+        $last-column: true
+      );
+    }
+  }
+
+  &.closed {
+    @include grid-column(0.5);
+
+    #menu-content {
+      display: none;
+
+
+    }
+
+    #menu-action {
+      @include grid-column(
+        $columns: 12,
+        $collapse: true
+      );
+    }
+  }
+}
+
+#menu-content {
+  @include grid-column(
+    $columns: 10,
+    $collapse: true
+  );
+
+  ul {
+    list-style: none;
+    color: #fff;
+    margin-top: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+      li {
+        margin: 25px 0;
+      }
+  }
+
+  .social-icons {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    a {
+      color: #363636;
+      margin: 0 8px;
+    }
+  }
+}
+
+
+#menu-action {
+  height: 100%;
+  top: 50%;
+  position: relative;
+  text-align: center;
+
+  a {
+    color: #fff;
+  }
+}
+
+.logo {
+  @include grid-row();
+  font-family: 'Caudex', serif;
+  color: #60c664;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 30px 0 0 7px;
+  font-size: 26px;
+  margin: 30px 0 0 30px;
+
+  span {
+    color: #c8c8c8;
+  }
+}
+
+.nav-row {
+  @include grid-row();
+  height: 100%;
+}
+
+.logo-row {
+  @include grid-row();
+}
+
+.logo-container {
+  @include grid-column(
+    $columns: 12,
+    $center: true
+  );
+}
