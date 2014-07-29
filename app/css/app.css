@@ -7176,12 +7176,14 @@ body {
   float: right;
   float: left;
   height: 100%;
+  overflow: auto;
 }
 
 nav {
   background: #272328;
   height: 100%;
   position: relative;
+  overflow-y: auto;
 }
 nav.open {
   padding-left: 0.9375rem;
@@ -7343,9 +7345,7 @@ nav.closed #menu-action {
 }
 
 article h1 {
-  background: #60c664;
   padding: 31px 0 31px 35px;
-  color: #fff;
   margin: 0 0 15px 0;
 }
 article p {
