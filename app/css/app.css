@@ -7186,8 +7186,8 @@ nav {
   overflow-y: auto;
 }
 nav.open {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 16.66667%;
   float: left;
   min-width: 212px;
@@ -7225,6 +7225,7 @@ nav.closed #menu-action {
   list-style: none;
   color: #fff;
   margin-top: 45px;
+  margin-left: 0;
   text-transform: uppercase;
 }
 #menu-content ul li {
@@ -7235,15 +7236,23 @@ nav.closed #menu-action {
   font-weight: 300;
 }
 #menu-content ul li a i {
-  margin: 0 18px 0 0;
+  font-size: 32px;
+  padding: 14px 14px;
+  background: #383738;
+  /* border: 1px solid #fff; */
+  border-radius: 44px 0px;
+  margin: 0 10px;
+  position: relative;
+  top: 8px;
 }
 #menu-content .social-icons {
   font-size: 20px;
   position: absolute;
   bottom: 10px;
+  margin-left: 12px;
 }
 #menu-content .social-icons a {
-  color: #363636;
+  color: #808080;
   margin: 0 8px;
 }
 
@@ -7345,8 +7354,9 @@ nav.closed #menu-action {
 }
 
 article h1 {
-  padding: 31px 0 31px 35px;
+  padding: 46px 0 31px 35px;
   margin: 0 0 15px 0;
+  font-family: 'Raleway', serif;
 }
 article p {
   padding: 0 35px 0 35px;
